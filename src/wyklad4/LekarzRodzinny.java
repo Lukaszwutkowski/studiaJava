@@ -1,6 +1,6 @@
 package wyklad4;
 
-public class LekarzRodzinny extends Osoba{
+public class LekarzRodzinny extends OsobaZKontraktem{
 
     private double liczbaZapisanychPacjentow;
     public LekarzRodzinny(String imie, String nazwisko, double liczbaZapisanychPacjentow) {

@@ -1,6 +1,6 @@
 package wyklad4;
 
-public class LekarzSpecjalista extends Osoba{
+public class LekarzSpecjalista extends OsobaZKontraktem{
 
     private double LiczbaPrzyjetychPacjentow;
 

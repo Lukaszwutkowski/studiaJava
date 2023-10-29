@@ -4,7 +4,12 @@ public class Wyklad4Start {
 
     public static void main(String[] args) {
 
-        Osoba osoba = new Osoba("Adam", "Nowak");
-        osoba.Drukuj();
+        Ksiegowosc ksiegowosc = new Ksiegowosc();
+
+        LekarzRodzinny lekarzRodzinny = new LekarzRodzinny("Adam", "Rodzinny", 100);
+        ksiegowosc.DrukujPoleceniePrzelewu(lekarzRodzinny);
+
+        LekarzSpecjalista lekarzSpecjalista = new LekarzSpecjalista("Adam", "Specjalista", 100);
+        ksiegowosc.DrukujPoleceniePrzelewu(lekarzSpecjalista);
     }
 }
