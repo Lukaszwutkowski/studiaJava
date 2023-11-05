@@ -1,7 +1,7 @@
 package wyklad5;
 
 //Jezeli klasa zawiera conajmniej jedna metode abstrakcyjna to musi byc abstrakcyjna
-public abstract class Projekt implements IObiektDoUmowy{
+public abstract class Projekt{
 
     private String tytul;
     private String opis;
@@ -12,8 +12,6 @@ public abstract class Projekt implements IObiektDoUmowy{
         this.opis = opis;
         this.kosztyDodatkowe = kosztyDodatkowe;
     }
-
-    @Override
     public void Dane(){
         System.out.println("Dane projektu");
         System.out.println("Tytul: " + tytul);
@@ -23,6 +21,13 @@ public abstract class Projekt implements IObiektDoUmowy{
 
     //Jezeli nie wiemy jak napisac dana funkcje w klasie w ktorej jestesmy, natomiast
     //wiemy jak w klasie dziedziczacej to warto w tej pierwszej klasie zrobic ja abstrakcyjna
-    @Override
     public abstract double Wycena();
+
+    public void DrukujUmowe(){
+        System.out.println();
+        System.out.println("======Umowa======");
+        System.out.println("Dane projektu: ");
+        Dane();
+        System.out.println("Kwota za realizacje: " + Wycena());
+    }
 }

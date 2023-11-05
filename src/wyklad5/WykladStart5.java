@@ -4,19 +4,17 @@ public class WykladStart5 {
 
     public static void main(String[] args) {
 
-        Umowa umowa = new Umowa();
-
         ProjektAudytorski projektAudytorski =
                 new ProjektAudytorski("Projekt 1", "Opis 1", 100, 1, 1);
 
-        umowa.DrukujUmowe(projektAudytorski);
+        projektAudytorski.DrukujUmowe();
 
         ProjektProgramistyczny projektProgramistyczny =
                 new ProjektProgramistyczny("Projekt 2", "Opis 2", 200,
                         2, 2,
                         2, 2, 2);
 
-        umowa.DrukujUmowe(projektProgramistyczny);
+        projektProgramistyczny.DrukujUmowe();
 
         ProjektProgramistycznyZHelpDeskiem projektProgramistycznyZHelpDeskiem =
                 new ProjektProgramistycznyZHelpDeskiem("Projekt 3", "Opis 3", 300,
@@ -24,6 +22,6 @@ public class WykladStart5 {
                         3, 3,
                         3, 3);
 
-        umowa.DrukujUmowe(projektProgramistycznyZHelpDeskiem);
+        projektProgramistycznyZHelpDeskiem.DrukujUmowe();
     }
 }
