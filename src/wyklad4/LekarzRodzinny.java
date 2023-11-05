@@ -1,6 +1,6 @@
 package wyklad4;
 
-public class LekarzRodzinny extends OsobaZKontraktem{
+public class LekarzRodzinny extends Osoba{
 
     private double liczbaZapisanychPacjentow;
     public LekarzRodzinny(String imie, String nazwisko, double liczbaZapisanychPacjentow) {
@@ -14,6 +14,7 @@ public class LekarzRodzinny extends OsobaZKontraktem{
         System.out.println("Liczba zapisanych pacjentow: " + liczbaZapisanychPacjentow);
     }
 
+    @Override
     public double IleDoWyplaty(){
         return this.liczbaZapisanychPacjentow * new ParametryFinansowe().GetKwotaZaPacjentaPodsawowegoKontaktu();
     }
