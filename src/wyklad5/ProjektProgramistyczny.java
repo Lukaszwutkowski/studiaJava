@@ -22,8 +22,8 @@ public class ProjektProgramistyczny extends Projekt{
     }
 
     @Override
-    public void DaneProjektu() {
-        super.DaneProjektu();
+    public void Dane() {
+        super.Dane();
         System.out.println("Liczba Osobo-Miesiecy Mlodszych Programistow: " + liczbaOsoboMiesiecyMlodszychProgramistow);
         System.out.println("Liczba Osobo-Miesiecy Programistow: " + liczbaOsoboMiesiecyProgramistow);
         System.out.println("Liczba Osobo-Miesiecy Starszych Programistow: " + liczbaOsoboMiesiecyStarszychProgramistow);

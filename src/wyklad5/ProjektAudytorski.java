@@ -13,8 +13,8 @@ public class ProjektAudytorski extends Projekt{
         this.liczbaOsoboboMiesiecyStarszegoSpecjalisty = liczbaOsoboboMiesiecyStarszegoSpecjalisty;
     }
 
-    public void DaneProjektu(){
-        super.DaneProjektu();
+    public void Dane(){
+        super.Dane();
         System.out.println("Liczba Osobo-Miesiecy Specjalisty: " + liczbaOsoboMiesiecySpecjalisty);
         System.out.println("Liczba Osobo-Miesiecy Starszego Specjalisty: " + liczbaOsoboboMiesiecyStarszegoSpecjalisty);
     }

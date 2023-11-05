@@ -15,8 +15,8 @@ public class ProjektProgramistycznyZHelpDeskiem extends ProjektProgramistyczny{
     }
 
     @Override
-    public void DaneProjektu() {
-        super.DaneProjektu();
+    public void Dane() {
+        super.Dane();
         System.out.println("Licba godzin Helpdesku: " + licbaGodzinHelpdesku);
     }
 
