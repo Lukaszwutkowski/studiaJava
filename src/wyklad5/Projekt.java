@@ -1,6 +1,7 @@
 package wyklad5;
 
-public class Projekt {
+//Jezeli klasa zawiera conajmniej jedna metode abstrakcyjna to musi byc abstrakcyjna
+public abstract class Projekt {
 
     private String tytul;
     private String opis;
@@ -18,4 +19,8 @@ public class Projekt {
         System.out.println("Opis: " + opis);
         System.out.println("Koszty dodatkowe: " + kosztyDodatkowe);
     }
+
+    //Jezeli nie wiemy jak napisac dana funkcje w klasie w ktorej jestesmy, natomiast
+    //wiemy jak w klasie dziedziczacej to warto w tej pierwszej klasie zrobic ja abstrakcyjna
+    public abstract double Wycena();
 }
